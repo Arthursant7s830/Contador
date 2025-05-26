@@ -8,11 +8,15 @@ function contar() {
         res.innerHTML = 'Impossível contar!'
         alert('[ERRO] Ausência de dados!')
     } else {
-        res.innerHTML = 'Contando: '
+        res.innerHTML = 'Contando: <br>'
         let i = Number(inicio.value)
         let f = Number(fim.value)
-        let p = Number(passo.value) 
-        
+        let p = Number(passo.value)
+
+        if (p <= 0) {
+            alert('Passo inválido! Considerando PASSO 1')
+            p = 1
+        }
 
         if (i < f) {
 
