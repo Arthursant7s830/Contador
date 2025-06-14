@@ -28,3 +28,8 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
+input#contar:hover {
+    background-color: rgb(222, 215, 215);
+    border: none;
+}
